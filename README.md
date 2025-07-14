@@ -80,16 +80,11 @@ A simple REST API built with Spring Boot for managing task lists and their assoc
 {
   "title": "Prepare report",
   "description": "Finish Q2 financial report",
-  "dueDate": "2025-07-14T23:59:00"
+  "dueDate": "2025-07-14T23:59:00",
+  "priority": "HIGH"
 }
 ```
 
-### Create Task with No Due Date
-
-```json
-{
-  "title": "Prepare report",
-  "description": "Finish Q2 financial report"
-}
-```
+> Valid values for `priority`: `"LOW"`, `"MEDIUM"` (default), `"HIGH"`  
+> `dueDate` is optional and can be set to `null`
 
