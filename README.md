@@ -60,3 +60,36 @@ A simple REST API built with Spring Boot for managing task lists and their assoc
 | GET    | `/task-lists/{task_list_id}/tasks/{task_id}`                  | Get task by ID |
 | PUT    | `/task-lists/{task_list_id}/tasks/{task_id}`                  | Update task    |
 | DELETE | `/task-lists/{task_list_id}/tasks/{task_id}`                  | Delete task    |
+
+## Example
+
+## Request Payloads
+
+### Create Task List (`POST /task-lists`)
+
+```json
+{
+  "title": "Work Tasks",
+  "description": "Tasks related to work"
+}
+```
+
+### Create Task (`POST /task-lists/{task_list_id}/tasks`)
+
+```json
+{
+  "title": "Prepare report",
+  "description": "Finish Q2 financial report",
+  "dueDate": "2025-07-14T23:59:00"
+}
+```
+
+### Create Task with No Due Date
+
+```json
+{
+  "title": "Prepare report",
+  "description": "Finish Q2 financial report"
+}
+```
+
